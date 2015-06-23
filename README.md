@@ -39,10 +39,10 @@ int n = 1;
 printf("%d\n", &n);
 ```
 So if you run the program above, as is, you'll probably get some weird number as output that probably isn't anywhere close to 1. This is because it's actually trying to print out the memory address of n, not the value. A slightly more bearable way of viewing a memory address is
-``C
+```C
 int n = 1;
 printf("%08x\n", &n);
-``
+```
 which prints the address out as a hexadecimal number, which is normally how memory addresses are formatted.
 
 ##Arrays
