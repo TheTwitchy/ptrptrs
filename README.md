@@ -34,10 +34,10 @@ If you've ever come across the phrase "dereferencing a null pointer", it essenti
 
 The inverse of dereferencing a pointer is called getting the address of a variable, which just means you get the address of where the variable currently resides in memory. 
 
-``C
+```C
 int n = 1;
 printf("%d\n", &n);
-``
+```
 So if you run the program above, as is, you'll probably get some weird number as output that probably isn't anywhere close to 1. This is because it's actually trying to print out the memory address of n, not the value. A slightly more bearable way of viewing a memory address is
 ``C
 int n = 1;
