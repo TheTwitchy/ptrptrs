@@ -2,7 +2,7 @@
 A practical C/C++ pointer reference for anyone who has ever had to deal with this junk.
 
 ## No seriously, what is it?
-Long story short, in my early days of C coding, back when C was already considered a language so old that my grandfather would beat me with a cane for not using an interpreted language, I struggled to figure out some of the practical aspects of pointers. On top of that, there were never any really good sites for figuring any of this out, so in a moment born of frustration and probably alcohol, I decide to write a practical reference for deciphering other people's code, and to save time by not having to try out every possible permutation of pointer symbols while writing my own. The original was lost somewhere while moving jobs and states in the last few years, but here's what I can remember from that version.
+Long story short, in my early days of C coding, back when C was already considered a language so old that my grandfather would beat me with a cane for not using an interpreted language, I struggled to figure out some of the practical aspects of pointers. On top of that, there were never any really good sites for figuring any of this out, so in a moment born of frustration and probably alcohol, I decide to write a practical reference for deciphering other people's code, and to save time by not having to try out every possible permutation of pointer symbols while writing my own. The original was lost somewhere while moving jobs and states in the last few years, but here's what I can remember from that version. A friend recently asked me for a copy of the old reference, so for thier sake, and so I won't lose it again, I've decided to put it here and add some things for others who may find it.
 
 I realize by now that anyone who finds this probably isn't writing enterprise software in C/C++ (and God help you if you are), but with the recent influx of DIYers and people looking to code for microcontrollers and embedded processors, C looks to be making a comeback in a small way with a lot of people who may not have traditional developer experience. If you have a basic understanding of C, you'll be fine.
 
@@ -92,7 +92,7 @@ n[0]=100   n[1]=200
 0x501dfbd0 #This number will likely be different, but notice it's a memory location.
 ```
 
-Array variable are nothing but pointers.
+Array variables are nothing but pointers.
 
 ###Pointers and Structs
 ```C
