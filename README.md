@@ -45,26 +45,26 @@ printf("%08x\n", &n);
 ```
 which prints the address out as a hexadecimal number, which is normally how memory addresses are formatted.
 
-##Arrays
+## Arrays
 Coming soon.
 
-##Structs
+## Structs
 Coming soon.
 
 ##Pointer Gymnastics
 Coming soon.
 
-##Reference
+## Reference
 The juicy parts for people who don't have the time to deal with my shenanigans. Assume x86 unless otherwise specified.
 
-###The Basics
+### The Basics
 ```C 
 int * n;
 char * c = malloc(sizeof(char));
 double * d = 0xdeadb33f;
 ```
 
-###Dereferencing Pointers
+### Dereferencing Pointers
 ```C
 int * n = malloc(sizeof(int));
 *n = 100;
@@ -77,7 +77,7 @@ Output
 
 Essentially, this returns whatever is at the memory pointed to by the pointer being dereferenced.
 
-###Pointers and Arrays
+### Pointers and Arrays
 ```C
 int n[2];
 n[0] = 100;
@@ -94,7 +94,7 @@ n[0]=100   n[1]=200
 
 Array variables are nothing but pointers.
 
-###Pointers and Structs
+### Pointers and Structs
 ```C
 typedef struct {
   int id;
@@ -125,7 +125,7 @@ is equivalent to:
 ```
 although the former is the shorter and much more common way to dereference a member.
 
-###Address Operator
+### Address Operator
 ```C
 int n = 100;
 printf("0x%08x\n", &n);
@@ -138,7 +138,7 @@ Output:
 
 The address operator will return the address of the variable it's applied to. Sort of the reverse of dereferencing a pointer.
 
-##Outro
+## Outro
 For the sake of not spreading blatant lies, I've checked all code given herein, but if you notice any misspellings, see a technical error, have a question, or know any really funny politically incorrect jokes, feel free to drop me a PM through GitHub. 
 
 That's all folks!
